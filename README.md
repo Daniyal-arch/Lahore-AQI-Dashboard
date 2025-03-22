@@ -1,99 +1,112 @@
-# Air Quality Index (AQI) Web Solution
+# Lahore Air Quality Index (AQI) Visualization Dashboard
 
-An interactive web solution developed using **Google Earth Engine**, **Sentinel-5P Satellite Data**, **Python**, and **Google AQI API**, designed to visualize and analyze air quality over Lahore district. It enables users to explore real-time air quality parameters such as NO₂, SO₂, CO, O₃, and aerosols.
+A real-time visualization and analysis tool for monitoring the Air Quality Index (AQI) of Lahore district using Sentinel-5P satellite data. The dashboard provides dynamic visualizations for gases like NO₂, SO₂, CO, O₃, and Aerosols with an interactive interface built in Python.
 
 ---
 
 ## Features
 
-- **Real-Time AQI Visualization**
-- **Sentinel-5P Satellite Data Integration**
-- **Interactive Toolboxes for Gas & Date Selection**
-- **Statistics of Specific Areas**
-- **Visualization of Individual Gases**
-- **Dynamic Data Analysis Widgets**
+- **Sentinel-5P Data Integration**: Visualizes real-time air quality data using Sentinel-5P satellite data processed via Google Earth Engine.
+- **Dynamic Visualization**: Interactive maps for NO₂, SO₂, CO, O₃, and Aerosols across Lahore.
+- **Toolbox for Interaction**: Allows users to zoom, pan, and interact with the AQI layers.
+- **Individual Gas Statistics**: Provides detailed statistics and plots for each specific pollutant.
+- **Area-specific AQI Stats**: Ability to select areas and view AQI statistics over time.
+- **Python-based Frontend**: Developed using geemap, ipywidgets, folium, and Google Earth Engine Python API.
 
 ---
 
-## Screenshots
+## Visual Preview
 
-### 🌐 Frontend Dashboard
+| AQI Visualization Dashboard | Individual Gas Statistics | Toolbox |  
+|-----------------------------|---------------------------|--------|  
+| ![Frontend](./images/Frontend.jpg) | ![Statistics](./images/Option%20to%20identify%20statistics%20per%20Gas.jpg) | ![Toolbox](./images/ToolBox%20To%20Interact%20with%20AQI.jpg) |
 
-![Frontend View](images/Frontend.jpg)
+| NO₂ | SO₂ | CO | O₃ | Aerosols |
+|-----|-----|----|----|---------|
+| ![NO2](./images/NO2.jpg) | ![SO2](./images/SO2.jpg) | ![CO](./images/CO.jpg) | ![O3](./images/O3.jpg) | ![Aerosol](./images/aerosol.jpg) |
 
----
-
-### 🗂️ Interactive Toolbox
-
-![Toolbox Interaction](images/ToolBox%20To%20Interact%20with%20AQI.jpg)
-
----
-
-### 📊 Pollutant-Specific Visualizations
-
-#### Nitrogen Dioxide (NO₂)
-![NO2 Visualization](images/NO2.jpg)
-
-#### Sulfur Dioxide (SO₂)
-![SO2 Visualization](images/SO2.jpg)
-
-#### Ozone (O₃)
-![O3 Visualization](images/O3.jpg)
-
-#### Carbon Monoxide (CO)
-![CO Visualization](images/CO.jpg)
-
-#### Aerosols
-![Aerosols Visualization](images/aerosol.jpg)
+| Obtained Statistics in Lahore |
+|-------------------------------|
+| ![Stats](./images/Obtained%20Statistics%20at%20Some%20Area%20in%20Lahore%20of%20AQI.jpg) |
 
 ---
 
-### 📌 Area-Wise Statistics
+## Technologies Used
 
-![Obtained Statistics](images/Obtained%20Statistics%20at%20Some%20Area%20in%20Lahore%20of%20AQI.jpg)
-
----
-
-### ⚙️ Gas Selection Options
-
-![Gas Stats Option](images/Option%20to%20identify%20statistics%20per%20Gas.jpg)
+- **Google Earth Engine (GEE)**: For accessing and processing Sentinel-5P datasets.
+- **geemap & folium**: For interactive map visualizations.
+- **ipywidgets**: For building user interface widgets.
+- **Python**: Core programming language for implementation.
 
 ---
 
-## Tech Stack
-
-- **Python**
-- **Google Earth Engine (GEE)**
-- **Sentinel-5P Satellite Data**
-- **Google AQI API**
-- **Geemap & Folium Libraries**
-- **Streamlit for Frontend Visualization**
-
----
-
-## How to Run
+## Installation
 
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/your-username/aqi-web-solution.git
-cd aqi-web-solution
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 ```
 
 2. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the Streamlit app:
+3. Authenticate with Google Earth Engine:
+
 ```bash
-streamlit run app.py
+earthengine authenticate
 ```
 
 ---
 
+## Usage
+
+1. Run the Python notebook or script:
+
+```bash
+jupyter notebook AQI_Visualization.ipynb
+```
+
+2. Interact with the AQI dashboard using the provided widgets and map interface.
+
+---
+
+## Project Structure
+
+```
+├── images/                             # Contains dashboard and result visualizations
+├── requirements.txt                   # Required Python libraries
+├── AQI_Visualization.ipynb            # Main notebook
+├── README.md                          # Documentation
+```
+
+---
+
+## Contributing
+
+Contributions are welcome! Feel free to fork this repo, open issues, or submit pull requests.
 
 ---
 
 ## License
 
 This project is licensed under the MIT License.
+
+---
+
+## Acknowledgements
+
+- Sentinel-5P Satellite Data (European Space Agency)
+- Google Earth Engine
+
+---
+
+## Contact
+
+Daniyal Khan   
+Email: daniyalnahk@gmail.com
+
